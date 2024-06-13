@@ -5,6 +5,8 @@ jobs:
         name: fist-job
         runs-on: ubuntu-latest
         steps:
+            - name: checkout repo
+              uses: actions/chekout@v4
             - name: welcome message
               run: echo "my first"
             - name: list files
