@@ -1,0 +1,13 @@
+name: my first app
+on: push
+jobs: 
+    fist_jobs:
+        name: fist-job
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcome message
+              run: echo "my first"
+            - name: list files
+              run: ls
+            - name: read file
+              run: cat README.md
