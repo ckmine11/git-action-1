@@ -21,7 +21,7 @@ jobs:
             - name: downlaod the artifacts            # downlaod the data
               uses: actions/download-artifact@v4
               with: 
-                name: dragon-text-file
+                name: dragon-file-text
             - name: test file exists
               run: grep -i "dragon" dragon.txt
     deploy_jobs:
@@ -31,7 +31,7 @@ jobs:
             - name: downlaod dragon text file
               uses: actions/download-artifact@v4
               with:
-                name: dragon-text-file
+                name: dragon-file-text
             - name: Read file
               run: cat dragon.txt
             - name: Deploy
